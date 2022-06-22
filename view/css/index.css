@@ -1,0 +1,86 @@
+body{
+    background-color: var(--empha2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background-color: var(--back1);
+    padding: 32px;
+    text-align: center;
+    display: block;
+    white-space: pre;
+}
+
+.header .headerTitle{
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--empha1);
+}
+
+.header .headerSubTitle{
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--empha1);
+}
+
+.container{
+    padding: 48px;
+    display: table;
+    margin: auto;
+}
+
+.floatBox{
+    background-color: var(--back3);
+    color: #fff;
+    padding: 12px 30px 30px 30px;
+    text-align: center;
+    width: min-content;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.floatBox input[type=text], .floatBox input[type=password]{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px;
+    outline: none;
+    text-align: center;
+}
+
+.floatBox input[type=submit]{
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+}
+
+.boxHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.headerLogin, .headerCadastro{
+    text-align: center;
+    font-size: 24px;
+    padding: 8px;
+}
+
+.headerLogin{
+    background-color: var(--back3);
+    border-radius: 15px 0px 0px 0px;
+    transition: background-color 1s;
+}
+
+.headerCadastro{
+    background-color: #dfe3eb;
+    color: #fff;
+    border-radius: 0px 15px 0px 0px;
+    cursor: pointer;
+    transition-timing-function: ease;
+    transition: background-color 1s;
+}
+
+.boxInput{
+    padding: 8px;
+}

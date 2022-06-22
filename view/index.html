@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="../assets/img/logo.ico" type="image/x-icon" rel="icon"/>
+    <title>Sarjeta</title>
+</head>
+<body>
+    <div class="header">
+        <span class="headerTitle">Sarjeta</span>
+        <span class="headerSubTitle">Gerencie sua vida financeira</span>
+    </div>
+
+    <div class="container">
+        <div class="boxHeader">
+            <div class="headerLogin" onclick="changeLogin()">
+                <span>Login</span>
+            </div>
+            <div class="headerCadastro" onclick="changeCadastro()">
+                <span>Cadastro</span>
+            </div>
+        </div>
+        <div class="floatBox">
+            
+            <div id="loginForm">
+                <div class="boxInput">
+                    <p><span>E-mail</span></p>
+                    <input type="text" id="emailInp" maxlength="256">
+                </div>
+                <div class="boxInput">
+                    <p><span>Senha</span></p>
+                    <input type="password" id="senhaInp" maxlength="256">
+                </div>
+                <div class="erroBoxLogin">
+                    <div class="erroMsgLogin">
+                        <span id="msgErroLogin"></span>
+                    </div>
+                </div>
+                <div class="boxInput">
+                    <input type="submit" onclick="loginIndex()" value="Entrar">
+                </div>
+            </div>
+
+            <div id="cadastroBox" style="display: none">
+                <div class="boxInput">
+                    <p><span>Nome Completo</span></p>
+                    <input type="text" id="nomeInp" maxlength="256">
+                </div>
+                <div class="boxInput">
+                    <p><span>RA</span></p>
+                    <input type="text" id="raInpCad" maxlength="8">
+                </div>
+                <div class="boxInput">
+                    <p><span>E-mail</span></p>
+                    <input type="text" id="emailInp" maxlength="256">
+                </div>
+                <div class="boxInput">
+                    <p><span>Senha</span></p>
+                    <input type="password" id="senhaInpCad" maxlength="256">
+                </div>
+                <div class="boxInput">
+                    <p><span>Curso</span></p>
+                    <select id="cursoInp">
+                        <option value="0">Selecione...</option>
+                        <option value="1">Análise e Desenvolvimento de  Sistemas</option>
+                        <option value="2">Ciência da Computação</option>
+                        <option value="3">Sistemas de Informação</option>
+                    </select>
+                </div>
+                <div class="boxInput">
+                    <p><span>Semestre</span></p>
+                    <select id="semestreInp">
+                        <option value="0">Selecione...</option>
+                        <option value="1">1º Semestre</option>
+                        <option value="2">2º Semestre</option>
+                        <option value="3">3º Semestre</option>
+                        <option value="4">4º Semestre</option>
+                        <option value="5">5º Semestre</option>
+                        <option value="6">6º Semestre</option>
+                        <option value="7">7º Semestre</option>
+                        <option value="8">8º Semestre</option>
+                    </select>
+                </div>
+                <div class="erroBox">
+                    <div class="erroMsg">
+                        <span id="msgErro"></span>
+                    </div>
+                </div>
+                <div class="boxInput">
+                    <button onclick="cadastrarIndex()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
