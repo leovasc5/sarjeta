@@ -19,7 +19,7 @@ body{
 
 .header .headerSubTitle{
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 300;
     color: var(--empha1);
 }
 
@@ -53,6 +53,13 @@ body{
     background-color: transparent;
     color: #fff;
     padding: 8px;
+    cursor: pointer;
+}
+
+.floatBox input[type=submit]:hover{
+    border: 2px solid #fff;
+    opacity: calc(0.8);
+    font-weight: 700;
 }
 
 .boxHeader{
@@ -62,8 +69,9 @@ body{
 
 .headerLogin, .headerCadastro{
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     padding: 8px;
+    font-weight: 600;
 }
 
 .headerLogin{
@@ -76,9 +84,6 @@ body{
     background-color: #dfe3eb;
     color: #fff;
     border-radius: 0px 15px 0px 0px;
-    cursor: pointer;
-    transition-timing-function: ease;
-    transition: background-color 1s;
 }
 
 .boxInput{
